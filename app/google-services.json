@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "639962589951",
+    "project_id": "turma3713",
+    "storage_bucket": "turma3713.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639962589951:android:0ab1cb7449e56b35e23aca",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa6IedabYhTmW6HVfr0XZ2pL-lPeIKq6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
