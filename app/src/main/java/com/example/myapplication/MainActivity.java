@@ -64,10 +64,9 @@ public class MainActivity extends AppCompatActivity {
                             FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
 
                             if (usuario.isEmailVerified()) {
-                                Toast.makeText(MainActivity.this, "Usuário logado", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "Usuário logado.", Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(MainActivity.this, "Usuário não verificado.", Toast.LENGTH_SHORT).show();
-                                usuario.sendEmailVerification();
+                                Toast.makeText(MainActivity.this, "Usuário não verificado. Verifique seu e-mail.", Toast.LENGTH_SHORT).show();
                             }
                         } else {
                             Toast.makeText(MainActivity.this, "Erro ao logar.", Toast.LENGTH_SHORT).show();
@@ -92,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                             FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
                             usuario.sendEmailVerification();
 
-                            Toast.makeText(MainActivity.this, "Usuário criado", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Usuário criado. Verifique seu e-mail.", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(MainActivity.this, "Usuário NÃO foi criado.", Toast.LENGTH_SHORT).show();
                         }
