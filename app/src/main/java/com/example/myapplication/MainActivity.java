@@ -89,10 +89,12 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            FirebaseUser usuario = FirebaseAuth.getInstance().getCurrentUser();
+                            usuario.sendEmailVerification();
+
                             Toast.makeText(MainActivity.this, "Usuário criado", Toast.LENGTH_SHORT).show();
                         } else {
                             Toast.makeText(MainActivity.this, "Usuário NÃO foi criado.", Toast.LENGTH_SHORT).show();
-
                         }
                     }
                 });
