@@ -25,6 +25,7 @@
         android:layout_marginBottom="184dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:text="jonathas.medina@ifms.edu.br"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -47,6 +48,7 @@
         android:layout_marginBottom="240dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:text="12345678"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
